@@ -13,3 +13,17 @@ body {
     height: 500px;
     border: 5px black solid;
 }
+
+h1 {
+    text-align: center;
+    text-decoration: underline black;
+}
+
+#start {
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
