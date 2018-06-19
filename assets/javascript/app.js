@@ -1,35 +1,28 @@
 
-//User clicks start button on opening of game
-var startBtn = document.getElementById('start');
+//Click START button to start timer and first question
+var timeLeft = 15
+var timer = document.getElementById('timer');
+var timerId = setInterval(countdown, 1000);
 
-//start button disappears
 
-//timer appears counting down from 25 sec and first question appears
-var timer = 30
+function countdown() {
+  if (timeLeft == 0) {
+    clearTimeout(timerId);
+    doSomething();
+  } else {
+    timer.innerHTML = 'Time Left:' + timeLeft;
+    timeLeft--;
+  }
+}
 
-//if user chooses correct answer: 
-//message correct answer alert
 
-//timer resets 25sec
 
-//next question appeears
+//This is to check if start button is working with a function
+// function myFunction() {
+//    alert("Hello"); 
+// };
 
-//if user chooses incorrect answer: 
-//message incorrect answer alert
 
-//the correct answer is shown,timer restarts 
-
-//next question appears
-
-//if timer reaches 0, correct answer shown
-
-//next question appears
-
-//timer resets 25sec
-
-//at end of game score of correct and incorrect answers appear
-
-//start over button resets THE GAME not RELOADS PAGE
 
 
 
